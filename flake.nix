@@ -1,5 +1,5 @@
 {
-  description = "Home Manager configuration of antonpirulero10";
+  description = "Configuracion para Laptops";
 
   inputs = {
     # Specify the source of Home Manager and Nixpkgs.
@@ -7,6 +7,11 @@
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+   plasma-manager = {
+      url = "github:nix-community/plasma-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
     };
   };
 
