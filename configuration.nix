@@ -26,7 +26,15 @@
   # Latest kernel
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  networking.hostName = "Antonpirulero10-Lapotop"; # Define your hostname.
+  # Disable hibernation
+  systemd.sleep.settings.Sleep = {
+    AllowHibernation = "no";
+    AllowHybridSleep = "no";
+    AllowSuspendThenHibernate = "no";
+  };
+
+  # Define your hostname.
+  networking.hostName = "Antonpirulero10-Laptop"; 
   
   # Enable networking
   networking.networkmanager.enable = true;
