@@ -1,0 +1,42 @@
+{ config, pkgs, inputs, ...}:
+{
+  environment.systemPackages = with pkgs; [
+  #Utility
+  micro
+  neovim
+  fastfetch
+  btop
+  networkmanager_dmenu
+  git
+  wget
+  wlogout     
+  hunspell
+  hunspellDicts.es_MX
+  hunspellDicts.en_US
+  bluez
+  blueman
+  bat
+  tree
+  #Programs
+  arduino-ide
+  octaveFull
+  joplin-desktop
+  vesktop
+  vscodium-fhs
+  vlc
+  qbittorrent
+  speedcrunch
+  libreoffice-qt
+  vesktop
+  gimp3
+  audacity
+  kdePackages.kdenlive
+  yazi
+  gnome-font-viewer
+  loupe
+  freecad
+  gnome-boxes
+  qucs-s
+  localsend
+  ];
+}
