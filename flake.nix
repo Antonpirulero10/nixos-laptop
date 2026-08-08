@@ -13,19 +13,22 @@
   outputs =  { self, nixpkgs, ... }@inputs:
   let
     system = "x86_64-linux";
-    pkgs = import nixpkgs {
-      inherit system;
-   	  config = {
-   	    allowUnfree = true;
-      };
-    };
   in
   {
     nixosConfigurations = {
       Antonpirulero10-PC = nixpkgs.lib.nixosSystem {
-      	specialArgs = { inherit inputs system; };
+      	specialArgs = { inherit inputs; };
       	modules = [
       	  ./configuration.nix
+      	  inputs.home-manager.nixosModules.default
+      	  {
+      	    home-manager = {
+              extraSpecialArgs = { inherit inputs; };
+              users = {
+                antonpirulero10 = import ./home.nix;
+              };
+            };
+      	  }
       	];
       };
     };
