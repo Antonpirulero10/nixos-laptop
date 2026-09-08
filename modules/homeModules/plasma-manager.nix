@@ -4,7 +4,7 @@
         inputs.plasma-manager.homeModules.plasma-manager
   ];
   programs.plasma = {
-    enable = true;
+    enable = false;
 
     workspace = {
      lookAndFeel = "leaf-dark";

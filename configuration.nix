@@ -145,8 +145,8 @@
   ]; 
 
   # Open ports in the firewall.
-   networking.firewall.allowedTCPPorts = [ 53317 ];
-   networking.firewall.allowedUDPPorts = [ 53317 ];
+   networking.firewall.allowedTCPPorts = [ 53317 3389 ];
+   networking.firewall.allowedUDPPorts = [ 53317 3389 ];
 
   system.stateVersion = "25.05";
 

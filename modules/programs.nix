@@ -29,22 +29,23 @@
   bat
   tree
   #Programs
-  arduino-ide
-  octaveFull
+  #arduino-ide
+  #octaveFull
   joplin-desktop
-  vesktop
+  #vesktop
   vscodium-fhs
   vlc
   qbittorrent
   speedcrunch
   libreoffice-qt
-  vesktop
   gimp3
-  audacity
-  kdePackages.kdenlive
+  #audacity
+  #kdePackages.kdenlive
   gnome-font-viewer
   loupe
   freecad
   gnome-boxes
+  kdePackages.krdc
+  remmina
   ];
 }
