@@ -34,7 +34,7 @@
   };
 
   # Define your hostname.
-  networking.hostName = "Antonpirulero10-Laptop"; 
+  networking.hostName = "Laptop"; 
   
   # Enable networking
   networking.networkmanager.enable = true;

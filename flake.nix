@@ -21,7 +21,7 @@
   in
   {
     nixosConfigurations = {
-      Antonpirulero10-Laptop = nixpkgs.lib.nixosSystem {
+     Laptop = nixpkgs.lib.nixosSystem {
       	specialArgs = { inherit inputs; };
       	modules = [
       	  ./configuration.nix
