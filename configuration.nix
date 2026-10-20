@@ -112,7 +112,7 @@
   users.users.antonpirulero10 = {
     isNormalUser = true;
     description = "Antonpirulero10";
-    extraGroups = [ "networkmanager" "wheel" "dialout" ];
+    extraGroups = [ "networkmanager" "wheel" "dialout" "podman" "samba" ];
     shell = pkgs.fish;
   };
 

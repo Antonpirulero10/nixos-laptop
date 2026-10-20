@@ -2,5 +2,7 @@
 {
   imports = [
   	./programs.nix
+  	./sqlserver.nix
+    #./samba.nix
   ];
 }

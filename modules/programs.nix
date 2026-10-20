@@ -12,7 +12,7 @@
   programs.kdeconnect.enable = true;
 
   environment.systemPackages = with pkgs; [
-  #Utility
+    #Utility
   micro
   neovim
   fastfetch
@@ -28,7 +28,9 @@
   blueman
   bat
   tree
-  #Programs
+  fresh-editor
+  nil
+    #Programs
   #arduino-ide
   #octaveFull
   joplin-desktop
@@ -46,5 +48,8 @@
   freecad
   gnome-boxes
   kdePackages.krdc
+  wechat
+  mission-center
+  xk6
   ];
 }
